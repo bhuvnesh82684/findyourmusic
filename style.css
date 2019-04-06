@@ -1,0 +1,423 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  font-family: "love ya Like a Sister", sans-serif;
+  
+  font-size: 16px;
+  line-height: 2;
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* fullscreen video*/
+.v-header{
+  height: 56.25vw;
+  display: block;
+  align-items: center;
+  color: #ffB1d;
+  
+}
+
+
+.container{
+  max-width: 100%;
+  
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: auto;
+  text-align: center;
+}
+
+.fs-vid-wrap
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 56.25vw;
+  overflow: hidden;
+}
+
+.fs-vid-wrap video{
+  min-width: 100%;
+  min-height: 100%;
+  /*width: auto;*/
+   
+  height: auto !important;
+  
+  
+}
+
+.h-overlay{
+  height: 56.25vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: #FFCF40;
+  opacity: 0.70;
+  z-index: -2;
+}
+
+.h-content{
+  
+  margin: auto;
+}
+
+
+.h-content h2{
+  font-size: 50px;
+  padding-top:20.12vw;
+}
+
+.h-content p{
+  font-size: 30px;
+  display: block;
+  
+  padding-bottom: 20px;
+}
+
+.btn{
+  background-color: #bf9b30;
+  color: #000;
+  font-size: 2vw;
+  padding: 10px 20px;
+  text-decoration: none;
+  z-index: 3;
+}
+/*end of fullscreen video*/
+
+/*section contents*/
+.showcase{
+  margin: 5px auto;
+  padding-top: 20px;
+}
+
+.page-content{
+  max-width: 100%;
+}
+
+.showcase h1{
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.showcase img{
+  width: 100%;
+}
+
+.showcase-left, .showcase-right{
+  margin-bottom: 10px;
+}
+.mission, .history{
+  padding-top:60px;
+  background-color: #777777;
+  color: white;
+}
+
+.vision, .objective{
+	
+  background-color: #;
+  color: black;
+}
+.vision{
+	padding-top:40px;
+}
+/*end of section contents*/
+
+/*@media (max-width:768px) {
+ 
+}*/
+.foot{
+  background-color: #333;
+  color: #eee;
+  font-size: 14px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+ul.unstyled{
+  list-style: none;
+  padding: 0;
+}
+
+ul.unstyled a{
+  color: #eee;
+}
+
+
+.baseline{
+  margin: 0;
+  padding: 5px;
+  height: 100%;
+  background-color: black;
+  color: grey;
+  text-align: center;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa {
+  margin-left:50px;
+  padding: 5px;
+  font-size: 20px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 3px 1px;
+}
+.scrlbtn{
+	z-index:5;
+	opacity:0;
+	position:relative;
+	top:15vw;
+	padding:0;
+	border:0;
+}
+.showcase-left:hover .scrlbtn{
+	opacity:1;
+}
+
+
+@media only screen and (max-width: 780px) {
+	.v-header{
+	height: 54.5vw;
+    display: block;
+    align-items: center;
+	}
+ .h-content{
+  
+  margin: auto;
+}
+.h-content h2{
+  font-size: 40px;
+	z-index: 0;
+   
+    position: absolute;
+    top: 15vw;
+    left: 33vw;
+}
+
+.btn{
+  background-color: #bf9b30;
+  color: #000;
+  font-size: 2vw;
+  padding: 8px 12px;
+  text-decoration: none;
+  z-index: 0;
+  position: absolute;
+  top: 48vw;
+  left: 47vw;
+}
+.h-content p{
+  position: absolute;
+    top: 41vw;
+    left: 32vw;
+    font-size: 3vw;
+    display: block;
+	z-index:0;
+}
+ .container{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .showcase-left{
+    padding-top: 5px;
+  }
+
+  #showcase h1{
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  #showcase p{
+    font-size: 11px;
+  }
+  .mission, .history,.vision
+{
+  padding-top:60px;
+  
+}
+.scrlbtn{
+	z-index:5;
+	opacity:.8;
+	position:relative;
+	top:16vw;
+	padding:0;
+	border:0;
+}
+}
+
+
+
+@media only screen and (max-width: 450px) {
+ .v-header{
+	height: 68vw;
+    display: block;
+    align-items: center;
+	}
+ .h-content{
+	 
+  margin: auto;
+}
+.h-content h2{
+    z-index: 0;
+    font-size: 25px;
+    position: absolute;
+    top: 32vw;
+    left: 28vw;
+}
+
+.h-content p{
+    position: absolute;
+    top: 58vw;
+    left: 25vw;
+    font-size: 15px;
+    display: block;
+	z-index:0;
+}
+.h-overlay{
+	
+  height: 50vw;
+  position: absolute;
+  top: 15vw;
+  left: 0;
+  width: 100vw;
+  background-color: #FFCF40;
+  opacity: 0.70;
+  z-index: -2;
+}
+.mission, .history,.vision
+{
+  padding-top:50px;
+  
+}
+.btn{
+  background-color: #bf9b30;
+  color: #000;
+  font-size: 10px;
+  padding: 5px 8px;
+  text-decoration: none;
+  z-index: 0;
+  position: absolute;
+    top: 65vw;
+    left: 41vw;
+    
+}
+.scrlbtn{
+	z-index:5;
+	opacity:56;
+	position:relative;
+	top:40vw;
+	padding:0;
+	border:0;
+}
+nav{
+	z-index:4;
+}
+.showcase-left{
+    padding-top: 0px;
+  }
+  
+  .fs-vid-wrap {
+    position: absolute;
+    top: 10vw;
+    left: 0;
+    width: 100%;
+    height: 56.25vw;
+    overflow: hidden;
+}
+}
+@media only screen and (max-width: 320px) {
+	.h-content h2{
+    z-index: 0;
+    font-size: 25px;
+    position: absolute;
+    top: 40vw;
+    left: 24vw;
+}
+
+.h-content p{
+    position: absolute;
+    top: 68vw;
+    left: 21vw;
+    font-size: 15px;
+    display: block;
+	z-index:0;
+}
+.h-overlay{
+	
+  height: 50vw;
+  position: absolute;
+  top: 15vw;
+  left: 0;
+  width: 100vw;
+  background-color: #FFCF40;
+  opacity: 0.70;
+  z-index: -2;
+}
+.mission, .history
+{
+  padding-top:20px;
+  
+}
+.btn{
+  background-color: #bf9b30;
+  color: #000;
+  font-size: 10px;
+  padding: 5px 8px;
+  text-decoration: none;
+  z-index: 0;
+  position: absolute;
+    top: 80vw;
+    left: 40vw;
+    
+}
+.scrlbtn{
+	z-index:5;
+	opacity:56;
+	position:relative;
+	top:32vw;
+	padding:0;
+	border:0;
+}
+nav{
+	z-index:4;
+}
+.showcase-left{
+    padding-top: 0px;
+  }
+  
+  .fs-vid-wrap {
+    position: absolute;
+    top: 20vw;
+    left: 0;
+    width: 100%;
+    height: 56.25vw;
+    overflow: hidden;
+}
+.vision {
+    padding-top: 22vw;
+}
+}
+}
